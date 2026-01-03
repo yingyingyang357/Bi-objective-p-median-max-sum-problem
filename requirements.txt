@@ -1,0 +1,15 @@
+# Core dependencies
+pandas>=2.0.0
+numpy>=1.24.0
+pydantic>=2.0.0
+jupyter>=1.0.0
+ipykernel>=6.0.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
+scipy>=1.10.0
+networkx>=3.0.0
+cplex>=22.1.0         # IBM CPLEX (requires license)
+pytest>=7.0.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.0.0
