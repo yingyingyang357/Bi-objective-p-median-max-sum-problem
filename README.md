@@ -6,14 +6,14 @@ This repository contains algorithms and implementations to solve:
 
 # Algorithms Implemented
 
-## For the Max-Min Diversity Problem
+**For the Max-Min Diversity Problem**
 
 - Improved Bisection Search (IBSS)[1]
 - Procedure A (ProcA) [2]
 - Direct Binary Search (DBC) [3]
 - NF, NF*, NFC* [4]
 
-## For the Bi-Objective p-Median and Max-Sum Diversity Problem [1]
+**For the Bi-Objective p-Median and Max-Sum Diversity Problem [1]**
 
 Epsilon-Constraint Method incorporating:
 - Quadratic Programming (εC)
