@@ -6,14 +6,14 @@ This repository contains algorithms and implementations to solve:
 
 # Algorithms Implemented
 
-For the Max-Min Diversity Problem
+**For the Max-Min Diversity Problem**
 
 - Improved Bisection Search (IBSS)[1]
 - Procedure A (ProcA) [2]
 - Direct Binary Search (DBC) [3]
 - NF, NF*, NFC* [4]
 
-For the Bi-Objective p-Median and Max-Sum Diversity Problem [1]
+**For the Bi-Objective p-Median and Max-Sum Diversity Problem [1]**
 
 Epsilon-Constraint Method incorporating:
 - Quadratic Programming (εC)
@@ -59,24 +59,31 @@ BI-OBJECTIVE-P-MEDIAN-MAX-SUM-PROBLEM/
 # Installation
 
 - Clone the repository:
-git clone https://github.com/your-username/BI-OBJECTIVE-P-MEDIAN-MAX-SUM-PROBLEM.git
-cd BI-OBJECTIVE-P-MEDIAN-MAX-SUM-PROBLEM
+
+`git clone https://github.com/your-username/BI-OBJECTIVE-P-MEDIAN-MAX-SUM-PROBLEM.git`
+
+`cd BI-OBJECTIVE-P-MEDIAN-MAX-SUM-PROBLEM`
 
 - Install dependencies:
-pip install -r requirements.txt
+
+`pip install -r requirements.txt`
 
 
 # Usage
 - Run Max-Min Diversity Problem
-  python run_maxmin.py
+
+  `python run_maxmin.py`
+
 - Run Bi-Objective p-Median & Max-Sum Diversity
-  python run_bi_objective.py
+
+  `python run_bi_objective.py`
 
 You can configure:
-n (number of locations)
-p (number of open facilities)
-epsilon (epsilon value)
-methods (algorithm chosen)
+
+- n (number of locations)
+- p (number of open facilities)
+- epsilon (epsilon value)
+- methods (algorithm chosen)
 
 
 # Dependencies
@@ -86,6 +93,9 @@ methods (algorithm chosen)
 # References
 
 [1] Yingying Yang, Hoa T. Bui, Ryan Loxton. An Exact Method for the Bi-objective p-median Max-sum Diversity Problem.
+
 [2] Sayyady, F., Fathi, Y., 2016. An integer programming approach for solving the p-dispersion problem. European Journal of Operational Research 253, 216–225. doi:10.1016/j.ejor.2016.02.026.
+
 [3] Parre˜no, F., ´Alvarez-Vald´es, R., Mart´ı, R., 2021. Measuring diversity. A review and an empirical analysis. European Journal of Operational Research 289, 515–532. doi:10.1016/j.ejor.2020.07.053.
+
 [4] Sayah, D., Irnich, S., 2017. A new compact formulation for the discrete p-dispersion problem. European Journal of Operational Research 256, 62–67. doi:10.1016/j.ejor.2016.06.036.
