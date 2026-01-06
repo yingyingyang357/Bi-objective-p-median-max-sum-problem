@@ -61,9 +61,9 @@ BI-OBJECTIVE-P-MEDIAN-MAX-SUM-PROBLEM/
 
 - Clone the repository:
 
-`git clone https://github.com/your-username/BI-OBJECTIVE-P-MEDIAN-MAX-SUM-PROBLEM.git`
+`git clone https://github.com/yingyingyang357/Bi-objective-p-median-max-sum-problem.git`
 
-`cd BI-OBJECTIVE-P-MEDIAN-MAX-SUM-PROBLEM`
+`cd Bi-objective-p-median-max-sum-problem`
 
 - Install dependencies:
 
