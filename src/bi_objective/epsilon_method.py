@@ -5,7 +5,7 @@ from typing import ClassVar, Dict, Union, Literal
 from src.data_class import ProblemData
 from src.p_median.p_median_solver import PMedianOptimiser
 
-# configure logger for the beta model module
+# configure logger
 logger = logging.getLogger(__name__)
 
 

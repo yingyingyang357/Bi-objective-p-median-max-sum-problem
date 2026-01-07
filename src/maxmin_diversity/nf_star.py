@@ -206,9 +206,7 @@ class NFwithBounds(OptimisationModelBase):
 
         return opt_value, runtime, warnings
 
-    # ------------------------------
-    # Public API
-    # ------------------------------
+
     def optimise(
         self,
         problem: ProblemData,
@@ -230,7 +228,7 @@ class NFwithBounds(OptimisationModelBase):
         """
         optimisation_warnings: Set[str] = set()
 
-        # Validations (aligned with your DBS/NF approach)
+        
         if validation:
             if getattr(problem, "number_of_facilities", 0) <= 0:
                 msg = f"Invalid number of facilities: {getattr(problem, 'number_of_facilities', None)}"
@@ -270,7 +268,7 @@ class NFwithBounds(OptimisationModelBase):
 
         logger.info(f"Starting NF* optimisation for {n} facilities, p={p_median}")
 
-        # Execute NF* with minimal-return solver
+        # Execute NF*
         try:
             opt_value, runtime, nf_warnings = self.nf_with_bounds(
                 n=n,
@@ -280,7 +278,6 @@ class NFwithBounds(OptimisationModelBase):
             )
             optimisation_warnings.update(nf_warnings)
 
-            # Prepare results DataFrame (Curtin-style)
             if opt_value is not None:
                 status = "optimal" if len(optimisation_warnings) == 0 else "suboptimal"
                 results_df = pd.DataFrame(

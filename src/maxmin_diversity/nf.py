@@ -183,9 +183,7 @@ class NewCompactFormulation(OptimisationModelBase):
 
         return opt_value, runtime, warnings
 
-    # ------------------------------
-    # Public API
-    # ------------------------------
+
     def optimise(
         self,
         problem: ProblemData,
@@ -207,7 +205,7 @@ class NewCompactFormulation(OptimisationModelBase):
         """
         optimisation_warnings: Set[str] = set()
 
-        # Basic validations (similar style to your DBS class)
+        
         if validation:
             if getattr(problem, "number_of_facilities", 0) <= 0:
                 msg = f"Invalid number of facilities: {problem.number_of_facilities}"
@@ -257,7 +255,6 @@ class NewCompactFormulation(OptimisationModelBase):
 
             optimisation_warnings.update(nf_warnings)
 
-            # Prepare results DataFrame (aligned with your DBS summary style)
             if opt_value is not None:
                 status = "optimal" if len(nf_warnings) == 0 else "suboptimal"
                 results_df = pd.DataFrame(
