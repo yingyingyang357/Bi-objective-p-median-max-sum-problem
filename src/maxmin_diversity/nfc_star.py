@@ -10,7 +10,7 @@ from src.data_class import ProblemData
 from src.maxmin_diversity.nf import NewCompactFormulation
 from src.maxmin_diversity.nf_star import NFwithBounds
 
-# configure logger for the NF* method
+# configure logger for the NFC* method
 logger = logging.getLogger(__name__)
 
 
@@ -264,9 +264,7 @@ class NFwithBoundsCuts(OptimisationModelBase):
 
         return opt_value, runtime, warnings
 
-    # ------------------------------
-    # Public API
-    # ------------------------------
+
     def optimise(
         self,
         problem: ProblemData,
@@ -287,7 +285,7 @@ class NFwithBoundsCuts(OptimisationModelBase):
         """
         optimisation_warnings: Set[str] = set()
 
-        # Validations (aligned with your style)
+
         if validation:
             if getattr(problem, "number_of_facilities", 0) <= 0:
                 msg = f"Invalid number of facilities: {getattr(problem, 'number_of_facilities', None)}"
